@@ -1,6 +1,10 @@
 // Axios is the framework we will be using to calling the API
 
 const axios = require('axios');
+require('dotenv').config();  // Load the .env file
+
+// Now use the token from the .env file
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 
 
 // This is the function where the call to the API is made. Returns the summarized text as a string.
