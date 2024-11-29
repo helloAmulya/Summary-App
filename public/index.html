@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AI Text Summarizer App</title>
+  <script src="https://kit.fontawesome.com/2c267e572e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <h1>Quick Summary</h1>
+  <p> Welcome to the AI Text Summarizer App, a project I created as part of my portfolio using Postman! This app
+    demonstrates the integration of Artificial Intelligence APIs to deliver concise summaries of lengthy texts. From
+    articles to research papers, it showcases how powerful APIs can streamline tasks efficiently. </p>
+  <p> Simply paste your text into the text area below and click the "Submit" button to see it in action. </p>
+
+  <div class="container">
+    <div class="text-box">
+      <textarea id="text_to_summarize" name="text_to_summarize"
+        placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)"
+        maxlength="100000"></textarea>
+      <button id="submit-button" class="submit-button">
+        <span class="submit-button-text">Summarize</span>
+      </button>
+    </div>
+    <div class="text-box">
+      <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here"></textarea>
+    </div>
+  </div>
+
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <h2>About Me</h2>
+    <p>Hi, I'm Amulya! A tech enthusiast passionate about building innovative solutions and exploring the world of APIs.
+      Connect with me on:</p>
+    <div class="social-icons">
+      <a href="https://github.com/helloAmulya" target="_blank" rel="noopener noreferrer" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/helloAmulya" target="_blank" rel="noopener noreferrer" class="social-link">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/amulyaratna.1/" target="_blank" rel="noopener noreferrer" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Curious how to build this app?</h2>
+        <p>Join Postman's Student Program and elevate your software development and API knowledge to help you in your
+          career.</p>
+        <a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app"
+          class="cta-button" target="_blank" rel="noopener nofollow">Register as student</a>
+      </div>
+      <img src="images/learning.png" alt="Learning Image">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
